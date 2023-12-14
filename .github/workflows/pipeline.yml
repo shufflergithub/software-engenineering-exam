@@ -27,8 +27,6 @@ jobs:
       run: dir
     - name: install dependencies
       run: npm install
-    - name: build the app
-      run: npm build
     - name: run unit tests
       run: npm run test:unit
     - name: print SoftUni username
