@@ -28,12 +28,6 @@ jobs:
       working-directory: ./boardgames
       run: npm install
       
-    - name: Debug Node Modules
-      run: ls -l ./boardgames/node_modules
-
-    - name: Debug Mocha Permissions
-      run: ls -l ./boardgames/node_modules/mocha
-      
     - name: run unit tests
       working-directory: ./boardgames
       run: npm run test:unit
