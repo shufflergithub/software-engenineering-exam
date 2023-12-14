@@ -27,6 +27,8 @@ jobs:
     - name: install dependencies
       working-directory: ./boardgames
       run: npm install
+    - name: Debug Mocha Permissions
+      run: ls -l ./boardgames/node_modules/mocha/bin/mocha
     - name: run unit tests
       working-directory: ./boardgames
       run: npm run test:unit
