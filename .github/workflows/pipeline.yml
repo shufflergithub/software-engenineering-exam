@@ -18,6 +18,7 @@ jobs:
       with:
         node-version: 18.x
         cache: 'npm'
+        cache-dependency-path: './boardgames/package-lock.json'
     - name: install dependencies
       run: npm install
     - name: build the app
