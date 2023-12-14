@@ -21,6 +21,8 @@ jobs:
         cache-dependency-path: './boardgames/package-lock.json'
     - name: navigate to the app root folder
       run: cd './boardgames'
+    - name: print current directory
+      run: dir
     - name: install dependencies
       run: npm install
     - name: build the app
