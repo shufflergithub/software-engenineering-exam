@@ -28,6 +28,6 @@ jobs:
     - name: install dependencies
       run: npm install
     - name: run unit tests
-      run:  npx mocha -u tdd 'tests/unit/*.js'
+      run: npm run test:unit
     - name: print SoftUni username
       run: echo "ivangeorgiev34"
