@@ -22,7 +22,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm install
-    - run: npm build
-    - run: npm run test:unit
-    - run: echo "ivangeorgiev34"
+    - name: install dependencies
+      run: npm install
+    - name: build the app
+      run: npm build
+    - name: run unit tests
+      run: npm run test:unit
+    - name: print SoftUni username
+      run: echo "ivangeorgiev34"
