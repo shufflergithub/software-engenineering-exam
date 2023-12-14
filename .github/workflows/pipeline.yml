@@ -23,12 +23,12 @@ jobs:
         node-version: 18.x
         cache: 'npm'
         cache-dependency-path: './boardgames/package-lock.json'
+    - name: Set execution permissions for Mocha
+      run: chmod +x ./node_modules/mocha/bin/mocha
     - name: print current directory
       run: dir
     - name: install dependencies
       run: npm install
-    - name: Set execution permissions for Mocha
-      run: chmod +x ./node_modules/mocha/bin/mocha
     - name: run unit tests
       run: npm run test:unit
     - name: print SoftUni username
